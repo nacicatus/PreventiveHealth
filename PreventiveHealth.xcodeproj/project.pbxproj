@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A328AE212B4B406300739296 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DFCCF1A8C41A5009E813C /* Foundation.framework */; };
+		A328AE242B4B406500739296 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DFCCD1A8C41A5009E813C /* UIKit.framework */; };
 		CB0DFCCE1A8C41A5009E813C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DFCCD1A8C41A5009E813C /* UIKit.framework */; };
 		CB0DFCD01A8C41A5009E813C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DFCCF1A8C41A5009E813C /* Foundation.framework */; };
 		CB0DFCD21A8C41A5009E813C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DFCD11A8C41A5009E813C /* CoreGraphics.framework */; };
@@ -18,8 +20,6 @@
 		CB0DFCE41A8C41A5009E813C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0DFCE31A8C41A5009E813C /* Default-568h@2x.png */; };
 		CB0DFCE71A8C41A5009E813C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0DFCE51A8C41A5009E813C /* MainStoryboard.storyboard */; };
 		CB0DFCEA1A8C41A5009E813C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0DFCE91A8C41A5009E813C /* ViewController.m */; };
-		CB0DFCF31A8C41A5009E813C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DFCCD1A8C41A5009E813C /* UIKit.framework */; };
-		CB0DFCF41A8C41A5009E813C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DFCCF1A8C41A5009E813C /* Foundation.framework */; };
 		CB0DFCFC1A8C41A5009E813C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB0DFCFA1A8C41A5009E813C /* InfoPlist.strings */; };
 		CB0DFCFF1A8C41A5009E813C /* PreventiveHealthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0DFCFE1A8C41A5009E813C /* PreventiveHealthTests.m */; };
 /* End PBXBuildFile section */
@@ -73,8 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB0DFCF31A8C41A5009E813C /* UIKit.framework in Frameworks */,
-				CB0DFCF41A8C41A5009E813C /* Foundation.framework in Frameworks */,
+				A328AE212B4B406300739296 /* Foundation.framework in Frameworks */,
+				A328AE242B4B406500739296 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +205,9 @@
 				ORGANIZATIONNAME = God;
 				TargetAttributes = {
 					CB0DFCC91A8C41A5009E813C = {
+						DevelopmentTeam = XSB6YPP53Z;
+					};
+					CB0DFCEF1A8C41A5009E813C = {
 						DevelopmentTeam = XSB6YPP53Z;
 					};
 				};
@@ -427,6 +430,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PreventiveHealth.app/PreventiveHealth";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEVELOPMENT_TEAM = XSB6YPP53Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -434,6 +439,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PreventiveHealth/PreventiveHealth-Prefix.pch";
 				INFOPLIST_FILE = "PreventiveHealthTests/PreventiveHealthTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -444,6 +450,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PreventiveHealth.app/PreventiveHealth";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEVELOPMENT_TEAM = XSB6YPP53Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -451,6 +459,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PreventiveHealth/PreventiveHealth-Prefix.pch";
 				INFOPLIST_FILE = "PreventiveHealthTests/PreventiveHealthTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
