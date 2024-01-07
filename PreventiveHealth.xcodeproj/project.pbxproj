@@ -18,12 +18,10 @@
 		CB0DFCE41A8C41A5009E813C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0DFCE31A8C41A5009E813C /* Default-568h@2x.png */; };
 		CB0DFCE71A8C41A5009E813C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0DFCE51A8C41A5009E813C /* MainStoryboard.storyboard */; };
 		CB0DFCEA1A8C41A5009E813C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0DFCE91A8C41A5009E813C /* ViewController.m */; };
-		CB0DFCF21A8C41A5009E813C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DFCF11A8C41A5009E813C /* SenTestingKit.framework */; };
 		CB0DFCF31A8C41A5009E813C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DFCCD1A8C41A5009E813C /* UIKit.framework */; };
 		CB0DFCF41A8C41A5009E813C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DFCCF1A8C41A5009E813C /* Foundation.framework */; };
 		CB0DFCFC1A8C41A5009E813C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB0DFCFA1A8C41A5009E813C /* InfoPlist.strings */; };
 		CB0DFCFF1A8C41A5009E813C /* PreventiveHealthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0DFCFE1A8C41A5009E813C /* PreventiveHealthTests.m */; };
-		CB0DFD091A8C4281009E813C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DFD081A8C4281009E813C /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +52,10 @@
 		CB0DFCE81A8C41A5009E813C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CB0DFCE91A8C41A5009E813C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CB0DFCF01A8C41A5009E813C /* PreventiveHealthTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreventiveHealthTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB0DFCF11A8C41A5009E813C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CB0DFCF91A8C41A5009E813C /* PreventiveHealthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PreventiveHealthTests-Info.plist"; sourceTree = "<group>"; };
 		CB0DFCFB1A8C41A5009E813C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB0DFCFD1A8C41A5009E813C /* PreventiveHealthTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreventiveHealthTests.h; sourceTree = "<group>"; };
 		CB0DFCFE1A8C41A5009E813C /* PreventiveHealthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreventiveHealthTests.m; sourceTree = "<group>"; };
-		CB0DFD081A8C4281009E813C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +66,6 @@
 				CB0DFCCE1A8C41A5009E813C /* UIKit.framework in Frameworks */,
 				CB0DFCD01A8C41A5009E813C /* Foundation.framework in Frameworks */,
 				CB0DFCD21A8C41A5009E813C /* CoreGraphics.framework in Frameworks */,
-				CB0DFD091A8C4281009E813C /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB0DFCF21A8C41A5009E813C /* SenTestingKit.framework in Frameworks */,
 				CB0DFCF31A8C41A5009E813C /* UIKit.framework in Frameworks */,
 				CB0DFCF41A8C41A5009E813C /* Foundation.framework in Frameworks */,
 			);
@@ -109,11 +103,9 @@
 		CB0DFCCC1A8C41A5009E813C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB0DFD081A8C4281009E813C /* FacebookSDK.framework */,
 				CB0DFCCD1A8C41A5009E813C /* UIKit.framework */,
 				CB0DFCCF1A8C41A5009E813C /* Foundation.framework */,
 				CB0DFCD11A8C41A5009E813C /* CoreGraphics.framework */,
-				CB0DFCF11A8C41A5009E813C /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,12 +203,18 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = God;
+				TargetAttributes = {
+					CB0DFCC91A8C41A5009E813C = {
+						DevelopmentTeam = XSB6YPP53Z;
+					};
+				};
 			};
 			buildConfigurationList = CB0DFCC51A8C41A5009E813C /* Build configuration list for PBXProject "PreventiveHealth" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CB0DFCC11A8C41A5009E813C;
@@ -386,6 +384,7 @@
 		CB0DFD031A8C41A5009E813C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XSB6YPP53Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../FacebookSDK\"",
@@ -394,6 +393,10 @@
 				GCC_PREFIX_HEADER = "PreventiveHealth/PreventiveHealth-Prefix.pch";
 				INFOPLIST_FILE = "PreventiveHealth/PreventiveHealth-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -401,6 +404,7 @@
 		CB0DFD041A8C41A5009E813C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XSB6YPP53Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../FacebookSDK\"",
@@ -409,6 +413,10 @@
 				GCC_PREFIX_HEADER = "PreventiveHealth/PreventiveHealth-Prefix.pch";
 				INFOPLIST_FILE = "PreventiveHealth/PreventiveHealth-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

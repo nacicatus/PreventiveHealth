@@ -2,12 +2,12 @@
 //  AppDelegate.m
 //  PreventiveHealth
 //
-//  Created by God on 2/12/15.
-//  Copyright (c) 2015 God. All rights reserved.
+//  Created by Saurabh Sikka on 2/12/15.
+//  Copyright (c) 2015 Saurabh Sikka . All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import <FacebookSDK/FacebookSDK.h>
+
 
 @implementation AppDelegate
 
@@ -38,7 +38,7 @@
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     // Logs 'install' and 'app activate' App Events.
-    [FBAppEvents activateApp];
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -50,6 +50,7 @@
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation {
     // attempt to extract a token from the url
-    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+    //return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+    return YES;
 }
 @end
